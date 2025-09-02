@@ -1,7 +1,7 @@
-//type Props = {};
+import Home from "../Component/Home/Home";
 
-const Home = () => {
-  return <div>Home</div>;
+const Homepage = () => {
+  return <Home />;
 };
 
-export default Home;
+export default Homepage;
