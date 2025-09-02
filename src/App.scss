@@ -19,3 +19,67 @@ input,
 textarea {
   font-family: "Helvetica Neue";
 }
+
+nav {
+  a {
+    color: rgb(76, 76, 77);
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+
+    i {
+      transition: all ease-out;
+    }
+
+    &:hover {
+      color: #ffd700;
+      svg {
+        opacity: 0;
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      content: "";
+      font-size: 9px;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+      display: block;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.4s ease-out;
+    }
+
+    &:first-child {
+      &::after {
+        content: "HOME";
+        position: absolute;
+        left: -3px;
+      }
+    }
+    &.about-link {
+      &::after {
+        content: "ABOUT";
+        position: absolute;
+        left: -4px;
+      }
+    }
+    &.contact-link {
+      &::after {
+        content: "CONTACT";
+        position: absolute;
+        left: -11px;
+      }
+    }
+  }
+}
+
+ul {
+  a:hover {
+    color: #ffd700;
+  }
+}
