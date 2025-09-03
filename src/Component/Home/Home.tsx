@@ -18,9 +18,19 @@ const Home = () => {
         <h2 className="font-bold text-stone-500">
           Frontend Developer / React Specialist
         </h2>
-        <div className="flex items-center mt-8 gap-4 text-2xl text-yellow-400">
-          <Link to="contact">Contact Me</Link>
-          <Link to="Upwork">Hire Me</Link>
+        <div className="flex items-center mt-4 gap-4 text-xl text-nowrap">
+          <Link
+            className="cta-btn text-yellow-400 hover:bg-yellow-400 hover:text-slate-700 px-3 py-1 border-2 border-yellow-400 whitespace-nowrap"
+            to="contact"
+          >
+            Contact Me
+          </Link>
+          <Link
+            className="cta-btn text-yellow-400 hover:bg-yellow-400 hover:text-slate-700 px-3 py-1 border-2 border-yellow-400 whitespace-nowrap"
+            to="Upwork"
+          >
+            Hire Me
+          </Link>
         </div>
       </div>
     </div>
