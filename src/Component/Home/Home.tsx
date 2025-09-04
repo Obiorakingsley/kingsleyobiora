@@ -1,19 +1,49 @@
 import { Link } from "react-router-dom";
 import "./Home.scss";
 import icon from "../../assets/images/logo.png";
+import { useEffect, useState } from "react";
+import Animate from "../AnimatedLetters/Animate";
 
 const Home = () => {
+  const [stringClass, setStringClass] = useState("string-animate");
+  const nameArray = ["i", "n", "g", "s", "l", "e", "y"];
+  const skillArray = [
+    "w",
+    "e",
+    "b",
+    " ",
+    "d",
+    "e",
+    "v",
+    "e",
+    "l",
+    "o",
+    "p",
+    "e",
+    "r",
+  ];
+
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      setStringClass("string-animate-hover");
+    }, 4000);
+
+    return () => clearTimeout(timeOut);
+  }, []);
   return (
     <div className="home-page">
       <div className="container hero-text top-1/4 w-full px-12">
         <h1 className="text-white text-5xl sm:text-6xl">
-          Hi, <br />
+          <span className={stringClass}>H</span>
+          <span className={`${stringClass} _12`}>i,</span>
+          <br />
           <span className="whitespace-nowrap flex">
-            I'm
+            <span className={`${stringClass} _13`}>I</span>
+            <span className={`${stringClass} _14`}>'m</span>
             <img className="ml-4 size-14 sm:size-14" src={icon} alt="logo" />
-            ingsley
+            <Animate stringClass={stringClass} strArray={nameArray} idx={15} />
           </span>
-          web developer
+          <Animate stringClass={stringClass} strArray={skillArray} idx={22} />
         </h1>
         <h2 className="font-bold text-stone-500">
           Frontend Developer / React Specialist
