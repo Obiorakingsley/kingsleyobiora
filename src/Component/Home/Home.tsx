@@ -33,7 +33,7 @@ const Home = () => {
     return () => clearTimeout(timeOut);
   }, []);
   return (
-    <div className="home-page flex items-center gap-4 min-h-screen">
+    <div className="home-page flex items-center gap-4">
       <div className="container w-full pl-10 transition-all duration-500">
         <h1 className="text-white text-4xl sm:text-6xl">
           <span className={stringClass}>H</span>

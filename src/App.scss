@@ -1,5 +1,5 @@
 $primary-color: #ffd700;
-
+@import "loaders.css/src/animations/pacman";
 @import "animate.css";
 
 @font-face {
@@ -91,5 +91,17 @@ ul {
   z-index: 1;
   transform-style: preserve-3d;
   animation: fadeIn 1s 1s forwards;
-  margin-bottom: 20px;
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  height: 50px;
+  margin: auto;
+  animation: fadeOut 1s 1s forwards;
 }
