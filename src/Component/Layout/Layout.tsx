@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <div className="">
       <Sidebar />
-      <div className="sm:pl-20 p-2 min-h-screen">
+      <div className="sm:pl-20 py-8 min-h-screen">
         <span className="text-primary absolute sm:top-12 top-20 left-8 sm:left-28 font-Aurore">
           &lt;body&gt;
         </span>

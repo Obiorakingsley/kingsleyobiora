@@ -4,6 +4,7 @@ import icon from "../../assets/images/logo.png";
 import { useEffect, useState } from "react";
 import Animate from "../AnimatedLetters/Animate";
 import Logo from "./AnimateLogo/Logo";
+import Profilepic from "../../assets/images/profilepic.jpg";
 
 const Home = () => {
   const [stringClass, setStringClass] = useState("string-animate");
@@ -32,8 +33,8 @@ const Home = () => {
     return () => clearTimeout(timeOut);
   }, []);
   return (
-    <div className="home-page flex items-center flex-col min-h-screen">
-      <div className="container w-full mt-32 sm:mt-44 pl-10">
+    <div className="home-page flex items-center gap-4 min-h-screen">
+      <div className="container w-full pl-10 transition-all duration-500">
         <h1 className="text-white text-4xl sm:text-6xl">
           <span className={stringClass}>H</span>
           <span className={`${stringClass} _12`}>i,</span>
@@ -63,6 +64,15 @@ const Home = () => {
             Hire Me
           </Link>
         </div>
+      </div>
+      <div className="hidden lg:flex items-center justify-around w-full">
+        <img
+          className="rounded-full border-8 border-amber-400 hover:animate-pulse"
+          src={Profilepic}
+          alt="profile pic"
+          width={350}
+          height={350}
+        />
       </div>
       <Logo />
     </div>

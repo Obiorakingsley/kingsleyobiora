@@ -40,11 +40,11 @@ const Logo = () => {
 
   return (
     <div
-      className="logo-container absolute sm:left-1/3 sm:mt-16  flex items-center justify-center"
+      className="logo-container absolute transition-all duration-500 top-20 right-2 sm:left-1/3 sm:mt-16 md:top-5 flex items-center justify-center"
       ref={bgRef}
     >
       <svg
-        className=" w-60 h-96 "
+        className=" w-56 h-80 "
         ref={outlineLogoRef}
         xmlns="http://www.w3.org/2000/svg"
         version="1.0"

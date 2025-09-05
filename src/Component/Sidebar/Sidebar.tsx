@@ -21,7 +21,7 @@ type isActive = {
 const Sidebar = () => {
   return (
     <>
-      <div className="min-h-screen hidden sm:flex w-20 px-8 py-4 absolute top-0 bg-neutral-950 items-center gap-28 flex-col ">
+      <div className="min-h-screen hidden sm:flex w-20 px-8 py-4 absolute top-0 bg-neutral-950 items-center gap-28 flex-col  ">
         <Link to={"/"}>
           <img className="size-8 mx-auto" src={Logo} alt="logo" width={30} />
           <p className="text-white text-sm">Kingsley</p>
@@ -77,7 +77,7 @@ const Sidebar = () => {
       </div>
 
       {/* Mobile-menu */}
-      <div className="sm:hidden flex gap-3 items-center justify-between p-2 bg-neutral-950">
+      <div className="sm:hidden flex gap-3 items-center justify-between p-2 w-full bg-neutral-950 ">
         <Link to={"/"}>
           <img className="size-8" src={Logo} alt="logo" width={30} />
           <p className="text-white text-sm">Kingsley</p>
