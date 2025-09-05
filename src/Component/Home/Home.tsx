@@ -3,6 +3,7 @@ import "./Home.scss";
 import icon from "../../assets/images/logo.png";
 import { useEffect, useState } from "react";
 import Animate from "../AnimatedLetters/Animate";
+import Logo from "./AnimateLogo/Logo";
 
 const Home = () => {
   const [stringClass, setStringClass] = useState("string-animate");
@@ -31,9 +32,9 @@ const Home = () => {
     return () => clearTimeout(timeOut);
   }, []);
   return (
-    <div className="home-page">
-      <div className="container hero-text top-1/4 w-full px-12">
-        <h1 className="text-white text-5xl sm:text-6xl">
+    <div className="home-page flex items-center flex-col min-h-screen">
+      <div className="container w-full mt-32 sm:mt-44 pl-10">
+        <h1 className="text-white text-4xl sm:text-6xl">
           <span className={stringClass}>H</span>
           <span className={`${stringClass} _12`}>i,</span>
           <br />
@@ -63,6 +64,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <Logo />
     </div>
   );
 };

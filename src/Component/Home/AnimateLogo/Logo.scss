@@ -1,0 +1,15 @@
+.logo-container {
+  z-index: -1;
+  max-width: 500px;
+  width: 400px;
+  opacity: 0;
+
+  svg {
+    transform: rotateZ(30deg) !important;
+  }
+}
+
+.svg-container {
+  stroke: #bea30960;
+  stroke-width: 10px;
+}
