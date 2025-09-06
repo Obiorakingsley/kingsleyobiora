@@ -105,3 +105,81 @@ ul {
   margin: auto;
   animation: fadeOut 1s 1s forwards;
 }
+
+.about-page,
+.contact-page {
+  h1 {
+    font-family: Coolvetica;
+    font-weight: 400;
+    font-size: 42px;
+    color: #ffd700;
+    position: relative;
+
+    &::before {
+      content: "<h1>";
+      font-family: La Belle Aurore;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -10px;
+      left: -10px;
+      opacity: 0.6;
+    }
+
+    &::after {
+      content: " </h1>";
+      font-family: La Belle Aurore;
+      font-size: 18px;
+      position: absolute;
+      margin-bottom: -10px;
+      bottom: 0;
+      left: -10px;
+      opacity: 0.6;
+      line-height: 10px;
+    }
+  }
+  .string-animate-hover {
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .about-text,
+  .contact-text {
+    font-family: sans-serif;
+    animation: pulse 1.3s;
+    color: #fff;
+    letter-spacing: 0.8px;
+    line-height: 1.7;
+    word-spacing: 1px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    h2 {
+      color: #ffd700;
+      font-size: 1.3rem;
+    }
+    h3 {
+      color: #d4b504;
+      font-size: 1rem;
+    }
+
+    &:nth-of-type(1) {
+      animation-delay: 1.2s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 1.3s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 1.4s;
+    }
+    &:nth-of-type(4) {
+      animation-delay: 1.5s;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.contact-form {
+  label {
+    display: grid;
+    gap: 0.2rem;
+    opacity: 0;
+    animation: fadeInUp 2s 2s forwards;
+    color: #ffd700;
+    font-size: 0.9rem;
+    input,
+    textarea {
+      border: 1px solid #4c85db7c;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: transparent;
+
+      border-radius: 5px;
+      box-shadow: 2px 2px 8px #5e99f054;
+      padding: 0.8rem;
+      color: #ffff;
+      font-size: 0.8rem;
+      letter-spacing: 1.2px;
+      outline: none;
+    }
+    textarea {
+      min-height: 150px;
+    }
+  }
+  button {
+    border: 2px solid #ffd9009a;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    color: #ffd700;
+  }
+}
