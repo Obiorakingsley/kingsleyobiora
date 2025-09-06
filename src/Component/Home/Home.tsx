@@ -9,13 +9,15 @@ import Loader from "react-loaders";
 
 const Home = () => {
   const [stringClass, setStringClass] = useState("string-animate");
-  const nameArray = ["i", "n", "g", "s", "l", "e", "y"];
+  const nameArray = ["i", "n", "g", "s", "l", "e", "y."];
   const skillArray = [
-    "w",
+    "A",
+    " ",
+    "W",
     "e",
     "b",
     " ",
-    "d",
+    "D",
     "e",
     "v",
     "e",
@@ -24,12 +26,33 @@ const Home = () => {
     "p",
     "e",
     "r",
+    " ",
+    "/",
+    " ",
+  ];
+  const skillArray2 = [
+    "R",
+    "e",
+    "a",
+    "c",
+    "t",
+    " ",
+    "S",
+    "p",
+    "e",
+    "c",
+    "i",
+    "a",
+    "l",
+    "i",
+    "s",
+    "t",
   ];
 
   useEffect(() => {
     const timeOut = setTimeout(() => {
       setStringClass("string-animate-hover");
-    }, 4000);
+    }, 8000);
 
     return () => clearTimeout(timeOut);
   }, []);
@@ -37,7 +60,7 @@ const Home = () => {
     <>
       <div className="home-page flex items-center gap-4">
         <div className="container w-full pl-10 transition-all duration-500">
-          <h1 className="text-white text-4xl sm:text-6xl">
+          <h1 className="text-white text-4xl sm:text-5xl">
             <span className={stringClass}>H</span>
             <span className={`${stringClass} _12`}>i,</span>
             <br />
@@ -51,7 +74,13 @@ const Home = () => {
                 idx={15}
               />
             </span>
-            <Animate stringClass={stringClass} strArray={skillArray} idx={22} />
+            <Animate stringClass={stringClass} strArray={skillArray} idx={20} />
+            <br />
+            <Animate
+              stringClass={stringClass}
+              strArray={skillArray2}
+              idx={25}
+            />
           </h1>
           <h2 className="font-bold text-stone-500">
             Frontend Developer / React Specialist
@@ -67,7 +96,7 @@ const Home = () => {
               className="cta-btn text-yellow-400 hover:bg-yellow-400 hover:text-slate-700 px-3 py-1 border-2 border-yellow-400 whitespace-nowrap"
               to="Upwork"
             >
-              Hire Me
+              Work with me
             </Link>
           </div>
         </div>

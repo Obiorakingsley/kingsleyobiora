@@ -17,7 +17,7 @@ const About = () => {
   useEffect(() => {
     const timeOut = setTimeout(() => {
       setStringClass("string-animate-hover");
-    }, 2000);
+    }, 3000);
 
     return () => clearTimeout(timeOut);
   }, []);
@@ -28,7 +28,7 @@ const About = () => {
           <h1 className="mb-8">
             <Animate
               strArray={["A", "b", "o", "u", "t", " ", "M", "e"]}
-              idx={15}
+              idx={18}
               stringClass={stringClass}
             />
           </h1>
