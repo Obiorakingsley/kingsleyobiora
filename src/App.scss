@@ -2,6 +2,8 @@ $primary-color: #ffd700;
 @import "loaders.css/src/animations/pacman";
 @import "animate.css";
 
+@import "leaflet/dist/leaflet.css";
+
 @font-face {
   font-family: "Helvetica Neue";
   src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");

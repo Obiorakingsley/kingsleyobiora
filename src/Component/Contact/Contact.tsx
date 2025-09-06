@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
+import ContactMap from "./ContactMap";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -44,8 +45,8 @@ const Contact = () => {
   }
   return (
     <>
-      <div className="contact-page container sm:pt-12 pt-4 pl-12 p-4 flex flex-col  gap-10 mb-20">
-        <div>
+      <div className="contact-page w-full container sm:pt-12 pt-4 pl-12 p-4 flex flex-col lg:flex-row lg:gap-40 lg:justify-between mb-20">
+        <div className=" mb-14">
           <h1 className="mb-10">
             <Animate
               strArray={["C", "o", "n", "t", "a", "c", "t", " ", "M", "e"]}
@@ -65,7 +66,7 @@ const Contact = () => {
             <form
               ref={formRef}
               onSubmit={sendEmail}
-              className="grid gap-4 max-w-96 w-full"
+              className="grid gap-4 min-w-96 w-full"
             >
               <label htmlFor="name">
                 Name
@@ -83,12 +84,13 @@ const Contact = () => {
                 sitekey="6LchXcArAAAAANBxNmvVIZIxlIwjgc_DCJA8XMbU"
                 onChange={(token: string | null) => setCaptchaToken(token)}
               />
-              <button className="place-self-start" type="submit">
+              <button className="place-self-start shadow " type="submit">
                 Submit
               </button>
             </form>
           </div>
         </div>
+        <ContactMap />
       </div>
       <Loader type="pacman" />
     </>

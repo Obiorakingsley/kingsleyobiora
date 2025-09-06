@@ -31,3 +31,33 @@
     color: #ffd700;
   }
 }
+
+.map-container {
+  height: 400px;
+  width: 100% !important;
+  border: 2px solid #639bee7c;
+  box-shadow: 2px 2px 8px #5e98f07c;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.info-map {
+  border: 2px solid #639bee7c;
+  box-shadow: 2px 2px 8px #5e98f044;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: #ffffffb6;
+  font-family: Helvetica;
+  background-color: #00000044;
+}
+
+.info-map,
+.map-container {
+  opacity: 0;
+  animation: fadeIn 1s 1.2s forwards;
+}
+
+.map-layer {
+  opacity: 0;
+  animation: backInRight 1s 1.2s forwards !important;
+}
