@@ -33,25 +33,69 @@ const About = () => {
             />
           </h1>
 
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            omnis placeat consequuntur sit et. Tempore odio dolores, molestiae
-            aspernatur dolorum aliquid voluptatibus cumque quam vero vel
-            similique repellat fuga quasi!
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-            officia, provident ratione dolores cupiditate quisquam! Dolorum ad
-            beatae animi perspiciatis ipsum velit, dolores recusandae est
-            numquam alias libero minima asperiores!
-          </p>
+          <div className="about-text">
+            <h2>Short Intro</h2>
+            <p>
+              Hi, I’m Kingsley Obiora, a passionate Front-End Developer focused
+              on building clean, interactive, and user-friendly web experiences.
+            </p>
+          </div>
+          <div className="about-text">
+            <h2>My Journey</h2>
+            <p>
+              I started my journey into web development in May 2024 with
+              curiosity about how websites worked, and became more serious about
+              it in September 2024, and since then it has grown into a passion
+              for creating modern, responsive interfaces.
+            </p>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-            veritatis hic quisquam illo ullam, quod aut optio voluptatem magnam
-            tempore vero id inventore reprehenderit ad perspiciatis excepturi
-            quia expedita? Ipsum?
-          </p>
+            <h2>What I Do Best</h2>
+            <ul className="list-disc pl-4">
+              <li>
+                Building modern React applications with performance and
+                scalability in mind
+              </li>
+              <li>
+                Designing pixel-perfect, responsive layouts with Tailwind CSS
+              </li>
+              <li>
+                Writing clean, semantic code that’s easy to maintain and extend
+              </li>
+              <li>
+                Exploring animations and smooth UI interactions to bring
+                websites to life
+              </li>
+            </ul>
+          </div>
+
+          <div className="about-text">
+            <h2>Currently</h2>
+            <p>
+              I’m currently working on projects that showcase my skills in
+              React, TypeScript, Next.js, and Tailwind CSS.
+            </p>
+
+            <p>
+              <span className="text-nowrap font-extrabold text-yellow-500">
+                I’m also open to opportunities{" "}
+              </span>
+              where I can collaborate, learn, and grow as a developer, whether
+              that’s internships, freelance work, or full-time roles.
+            </p>
+          </div>
+          <div className="about-text">
+            <h2>Beyond Code </h2>
+            <p>
+              When I’m not coding, I enjoy exploring design inspiration, keeping
+              up with tech trends, and connecting with other developers. I also
+              enjoy ⚽ football, 🎮 gaming, 🎨 design.
+            </p>
+            <h2>Let’s Connect</h2>
+            <p>
+              I’d love to collaborate or chat about exciting opportunities. 👉
+              [LinkedIn] | [GitHub] | [Email]
+            </p>
+          </div>
         </div>
         <div className="stage-cube grid items-center relative">
           <div className="cubespinner absolute top-32 ">
