@@ -1,3 +1,13 @@
+.card-container {
+  @for $i from 0 through 20 {
+    .animate-card._#{$i} {
+      opacity: 0;
+      animation: fadeInUp 1s forwards;
+      animation-delay: #{calc($i + 0.3 / 0.7)}s;
+    }
+  }
+}
+
 .project-card {
   max-width: 300px;
   max-height: 450px;
@@ -9,5 +19,10 @@
   margin: 0 auto;
   img {
     width: 100%;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 }

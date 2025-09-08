@@ -3,12 +3,13 @@ import "./Project.scss";
 import { useEffect, useState } from "react";
 import Animate from "../AnimatedLetters/Animate";
 import Modal from "./Modal";
+import TechBadge from "./TechBadge";
 
 type ProjectType = {
   title: string;
   description: string;
   tech: string[];
-  image: string;
+  images: string[];
   projectLink?: string;
   codeLink?: string;
 };
@@ -19,7 +20,7 @@ const projects: ProjectType[] = [
     description:
       "Personal portfolio showcasing animations, contact form, and responsive design.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Sass", "EmailJS"],
-    image: "e-store.png",
+    images: ["e-store.png", "e-store.png"],
     projectLink: "https://kingsleyObiora.com",
     codeLink: "https://github.com/ObioraKingsley/portfolio",
   },
@@ -29,7 +30,7 @@ const projects: ProjectType[] = [
       "EStore is a fully functional, full-stack e-commerce web application built with modern web technologies. It demonstrates core e-commerce functionalities including user authentication, product browsing, shopping cart management, and a seamless checkout flow, all powered by Firebase. A full-stack, responsive e-commerce web application built with React and Firebase. Features user authentication, product filtering, cart management, and Firestore database integration.",
 
     tech: ["React", "Firebase", "CSS3", "Firestore"],
-    image: "e-store.png",
+    images: ["e-store.png"],
     projectLink: "https://e-store-792c2.web.app/",
     codeLink: "https://github.com/Obiorakingsley/E-store-firebase",
   },
@@ -38,7 +39,7 @@ const projects: ProjectType[] = [
     description:
       "A lightweight, user-friendly weather application that delivers accurate current weather conditions for any global location. Built with simplicity in mind, it provides essential weather data at a glance.",
     tech: ["JavaScript", "Open weather API", "Html5", "CSS"],
-    image: "/images/weather.png",
+    images: ["/images/weather.png"],
     projectLink: "https://weather-app-obiora-kingsleys-app.vercel.app/",
     codeLink: "https://github.com/Obiorakingsley/Weather-App",
   },
@@ -47,7 +48,7 @@ const projects: ProjectType[] = [
     description:
       "A sleek two-in-one web app featuring a smart calculator 🤖 and real-time currency converter 🌍, built with vanilla JavaScript",
     tech: ["Javascript", "Html5", "ExchangeRate API", "CSS3"],
-    image: "/images/currency.png",
+    images: ["/images/currency.png"],
     projectLink: "https://currency-calculator-obiora-kingsleys-app.vercel.app/",
     codeLink: "https://github.com/Obiorakingsley/Currency-Calculator",
   },
@@ -77,7 +78,7 @@ const Projects = () => {
             />
           </h1>
         </div>
-        <div className="gap-8 w-full grid grid-cols-1 md:grid-cols-2 lg:pl-8 lg:grid-cols-3">
+        <div className="card-container gap-8 w-full grid grid-cols-1 md:grid-cols-2 lg:pl-8 lg:grid-cols-3">
           {projects.map((project, index) => (
             <>
               <div
@@ -86,10 +87,10 @@ const Projects = () => {
                   setIsModal((prev) => !prev);
                 }}
                 key={index}
-                className="project-card bg-white shadow-lg  hover:shadow-2xl mx-auto transition"
+                className={`project-card animate-card _${index} flex flex-col gap-2 bg-white shadow-lg  hover:shadow-2xl mx-auto transition-transform`}
               >
                 <img
-                  src={`/${project.image}`}
+                  src={`/${project.images[0]}`}
                   alt={project.title}
                   className="h-48 w-full object-cover"
                 />
@@ -102,16 +103,7 @@ const Projects = () => {
                     {project.description.substring(0, 55) + "..."}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech, idx) => (
-                      <span
-                        key={idx}
-                        className="px-2 py-1 text-sm bg-yellow-100 text-yellow-700 rounded-lg"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                  <TechBadge name={project.tech} />
 
                   <div className="flex gap-4">
                     {project.projectLink && (
@@ -147,7 +139,7 @@ const Projects = () => {
           codeLink={modalData?.codeLink}
           projectLink={modalData?.projectLink}
           tech={modalData?.tech}
-          image={modalData?.image}
+          images={modalData?.images}
           description={modalData?.description}
           setIsModal={setIsModal}
           isModal={isModal}

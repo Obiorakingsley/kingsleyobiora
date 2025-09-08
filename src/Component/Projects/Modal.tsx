@@ -1,8 +1,16 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import TechBadge from "./TechBadge";
+
 type modalProps = {
   title?: string;
   description?: string;
   tech?: string[];
-  image?: string;
+  images?: string[];
   projectLink?: string;
   codeLink?: string;
   setIsModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -15,20 +23,39 @@ const Modal: React.FC<modalProps> = ({
   tech,
   projectLink,
   codeLink,
-  image,
+  images,
   setIsModal,
 }) => {
   return (
     <section className="absolute cursor-pointer bg-black inset-1 z-5 top-0 backdrop-blur-sm bg-opacity-30 text-white h-full grid place-content-center">
-      <div className=" modal-details border-2 flex flex-col p-2 gap-3 max-w-screen-sm lg:max-w-screen-sm rounded-lg">
-        <img src={`/${image}`} alt="e-store" height={300} width={400} />
-        <h1 className="text-2xl">{title}</h1>
+      <div className=" modal-details border-2 flex flex-col p-2 gap-3 max-w-screen-sm lg:max-w-screen-sm rounded-lg overflow-y-scroll scrollbar-hide">
+        {
+          <>
+            <Swiper
+              modules={[Autoplay, Pagination, Navigation]}
+              spaceBetween={10}
+              centeredSlides={true}
+              navigation
+              freeMode={true}
+              grabCursor={true}
+              //loop={true}
+              slidesPerView="auto"
+              autoplay={{ delay: 3000 }}
+              pagination={{ clickable: true }}
+            >
+              {images?.map((img) => (
+                <SwiperSlide>
+                  <img src={img} alt="project image" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </>
+        }
+        <h1>{title}</h1>
         <p>{description}</p>
-        <div>
-          {tech?.map((t, i) => (
-            <span key={i}>{t}</span>
-          ))}
-        </div>
+
+        <TechBadge name={tech} />
+
         <p>{projectLink}</p>
         <p>{codeLink}</p>
         <button
