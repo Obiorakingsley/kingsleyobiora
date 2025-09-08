@@ -2,7 +2,6 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import * as L from "leaflet";
 import "./Contact.scss";
-import { Link } from "react-router-dom";
 
 import iconUrl from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
@@ -24,7 +23,8 @@ const ContactMap = () => {
         <p>Nigeria</p>
         <p>
           <a
-            href={`mailto:${"kingsleyobiora527@gmail.com"}`}
+            href={'mailto:"kingsleyobiora527@gmail.com'}
+            target="_blank"
             aria-label="Email: kingsleyobiora527@gmail.com"
             className="text-primary underline"
           >
@@ -45,9 +45,7 @@ const ContactMap = () => {
         />
 
         <Marker position={[6.5244, 3.3792]}>
-          <Popup>
-            Kingsley lives here <br /> Let’s connect ;)
-          </Popup>
+          <Popup>Kingsley lives here</Popup>
         </Marker>
       </MapContainer>
     </div>

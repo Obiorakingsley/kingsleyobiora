@@ -5,12 +5,14 @@ import {
   faEnvelope,
   faHome,
   faList,
+  faProjectDiagram,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faInstagram,
   faLinkedinIn,
+  faRProject,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -50,6 +52,14 @@ const Sidebar = () => {
             to="contact"
           >
             <FontAwesomeIcon className="size-6" icon={faEnvelope} />
+          </NavLink>
+          <NavLink
+            className={`project-link ${({ isActive }: isActive) => {
+              isActive && "text-primary";
+            }}`}
+            to="project"
+          >
+            <FontAwesomeIcon className="size-6" icon={faProjectDiagram} />
           </NavLink>
         </nav>
         <ul className="list-none flex flex-col gap-6 ">
@@ -106,6 +116,14 @@ const Sidebar = () => {
             to="contact"
           >
             <FontAwesomeIcon className="size-6" icon={faEnvelope} />
+          </NavLink>
+          <NavLink
+            className={`project-link ${({ isActive }: isActive) => {
+              isActive && "text-primary";
+            }}`}
+            to="project"
+          >
+            <FontAwesomeIcon className="size-6" icon={faProjectDiagram} />
           </NavLink>
         </nav>
         <button className="text-primary">
