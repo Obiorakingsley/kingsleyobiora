@@ -4,7 +4,7 @@ import "swiper/css/free-mode";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import TechBadge from "./TechBadge";
+import TechBadge from "../../utils/TechBadge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faLink, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,8 +35,8 @@ const Modal: React.FC<modalProps> = ({
   challenges,
 }) => {
   return (
-    <section className="absolute bg-black inset-1 z-5 top-0 backdrop-blur-sm bg-opacity-30 text-white h-full grid place-content-center place-items-center">
-      <div className="text-black modal-details border-2 flex flex-col p-3 gap-3 max-w-screen-sm lg:max-w-screen-sm h-5/6  rounded-xl overflow-y-scroll relative">
+    <section className="modal-container absolute bg-black inset-1 z-5 top-0 backdrop-blur-sm bg-opacity-30 text-white h-full grid place-content-center place-items-center">
+      <div className="text-black modal-details border-2 flex flex-col p-3 gap-3 max-w-screen-sm lg:max-w-screen-sm h-5/6  rounded-xl overflow-y-scroll relative transition-transform">
         <div className="min-h-max">
           {
             <>

@@ -14,7 +14,16 @@
   position: relative;
   border-radius: 10px;
   padding: 5px;
+
+  img {
+    border-radius: 10px;
+  }
 }
+
+.modal-container {
+  animation: fadeInUp 0.8s forwards;
+}
+
 .modal-details {
   margin: 0 auto;
   background-color: #ffffff;

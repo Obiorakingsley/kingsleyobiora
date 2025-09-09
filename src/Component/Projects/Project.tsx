@@ -3,9 +3,10 @@ import "./Project.scss";
 import { useEffect, useState } from "react";
 import Animate from "../AnimatedLetters/Animate";
 import Modal from "./Modal";
-import TechBadge from "./TechBadge";
+import TechBadge from "../../utils/TechBadge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faExpand, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faOpenid } from "@fortawesome/free-brands-svg-icons";
 
 type ProjectType = {
   title: string;
@@ -84,7 +85,11 @@ const projects: ProjectType[] = [
     description:
       "A lightweight, user-friendly weather application that delivers accurate current weather conditions for any global location.",
     tech: ["JavaScript", "OpenWeather API", "HTML5", "CSS"],
-    images: ["/images/weather.png"],
+    images: [
+      "WeatherApp/img1.png",
+      "WeatherApp/img2.png",
+      "WeatherApp/img3.png",
+    ],
     features: [
       "Instant Weather Updates( Get real time temperature, humidity, and wind data)",
       "Visual Weather Indicators( Dynamic icons for clear, cloudy, rainy, and other conditions)",
@@ -110,7 +115,12 @@ const projects: ProjectType[] = [
     description:
       "A sleek two-in-one web app featuring a smart calculator 🤖 and real-time currency converter 🌍, built with vanilla JavaScript.",
     tech: ["JavaScript", "HTML5", "ExchangeRate API", "CSS3"],
-    images: ["/images/currency.png"],
+    images: [
+      "Currency/img1.png",
+      "Currency/img2.png",
+      "Currency/img3.png",
+      "Currency/img3.png",
+    ],
     features: [
       " Regex-powered input validation → Blocks invalid math expressions",
       "Real-time evaluation → See results as you type",
