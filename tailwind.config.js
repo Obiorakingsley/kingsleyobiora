@@ -1,3 +1,6 @@
+import { plugin } from "postcss";
+import plugin from "tailwindcss";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -8,6 +11,7 @@ export default {
       },
       colors: {
         primary: "#ffd700",
+        color: "#06162e",
       },
     },
   },

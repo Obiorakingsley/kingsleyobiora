@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
 import "./Logo.scss";
-import { gsap } from "gsap-trial";
-import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
+import { gsap } from "gsap";
+
+// @ts-ignore
+import DrawSVGPlugin from "./plugins/DrawSVGPlugin";
 
 const Logo = () => {
   const bgRef = useRef<HTMLDivElement>(null);
@@ -66,3 +68,11 @@ const Logo = () => {
 };
 
 export default Logo;
+
+// import { gsap } from "gsap";
+
+// // Import DrawSVGPlugin from local file
+// import DrawSVGPlugin from "./plugins/DrawSVGPlugin";
+
+// // Register the plugin
+// gsap.registerPlugin(DrawSVGPlugin);

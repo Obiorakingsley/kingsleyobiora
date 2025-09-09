@@ -2,7 +2,7 @@
   @for $i from 0 through 20 {
     .animate-card._#{$i} {
       opacity: 0;
-      animation: fadeInUp 1s forwards;
+      animation: fadeInUp 1.7s forwards;
       animation-delay: #{calc($i + 0.3 / 0.7)}s;
     }
   }
@@ -17,12 +17,41 @@
 }
 .modal-details {
   margin: 0 auto;
+  background-color: #ffffff;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #06162e;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #504f4f;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
   img {
-    width: 100%;
-    border-radius: 8px;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 
   h1 {
     font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
   }
 }
