@@ -46,21 +46,5 @@
 
 .profile-img {
   opacity: 0;
-
-  animation: profile 0.8s ease-in-out 1.2s forwards;
-}
-
-@keyframes profile {
-  0% {
-    opacity: 0;
-    scale: 1.1;
-  }
-  50% {
-    opacity: 0.5;
-    scale: 1.15;
-  }
-  100% {
-    opacity: 1;
-    scale: 1;
-  }
+  animation: fadeIn 1s 1.5s forwards;
 }

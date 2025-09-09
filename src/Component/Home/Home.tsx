@@ -9,6 +9,7 @@ import Loader from "react-loaders";
 
 const Home = () => {
   const [stringClass, setStringClass] = useState("string-animate");
+
   const nameArray = ["i", "n", "g", "s", "l", "e", "y."];
   const skillArray = [
     "A",
@@ -87,13 +88,13 @@ const Home = () => {
           </h2>
           <div className="flex items-center mt-4 gap-4 text-xl text-nowrap">
             <Link
-              className="cta-btn text-yellow-400 hover:bg-yellow-400 hover:text-slate-700 px-3 py-1 border-2 border-yellow-400 whitespace-nowrap"
+              className="cta-btn text-yellow-400 hover:bg-yellow-400 hover:text-slate-700 px-3 py-1 border-2 border-yellow-400 hover:transition-all whitespace-nowrap rounded-md"
               to="contact"
             >
               Contact Me
             </Link>
             <Link
-              className="cta-btn text-yellow-400 hover:bg-yellow-400 hover:text-slate-700 px-3 py-1 border-2 border-yellow-400 whitespace-nowrap"
+              className="cta-btn text-yellow-400 hover:bg-yellow-400 hover:text-slate-700 px-3 py-1 border-2 border-yellow-400 whitespace-nowrap rounded-md transition-all"
               to="Upwork"
             >
               Work with me

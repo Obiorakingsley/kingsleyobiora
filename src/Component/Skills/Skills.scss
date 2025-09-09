@@ -1,0 +1,41 @@
+.skills-page {
+  h2 {
+    font-family: Coolvetica;
+    letter-spacing: 2px;
+  }
+  .cta-btn {
+    border-radius: 5px;
+    .cta-text {
+      box-shadow: 2px 2px 8px #0000004b;
+      padding: 0.2rem 0.5rem;
+    }
+  }
+
+  .skills-icons {
+    margin-top: 50px;
+    div {
+      padding: 0.5rem;
+      width: 100px;
+      height: 150px;
+      font-size: 2.5rem !important;
+      background-color: rgba(0, 0, 0, 0.541);
+      font-size: 100px;
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+
+      &:hover {
+        scale: 1.05;
+        transition: all 0.2s linear;
+      }
+      span {
+        font-size: 1.2rem;
+        color: #ffffffa2;
+        text-shadow: 2px 2px 8px #ffffff6c;
+      }
+    }
+  }
+}

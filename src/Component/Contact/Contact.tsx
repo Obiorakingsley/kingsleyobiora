@@ -47,7 +47,7 @@ const Contact = () => {
     <>
       <div className="contact-page w-full container sm:pt-12 pt-4 pl-12 p-4 flex flex-col lg:flex-row lg:gap-40 lg:justify-between mb-20">
         <div className=" mb-14">
-          <h1 className="mb-10">
+          <h1 className="mb-12">
             <Animate
               strArray={["C", "o", "n", "t", "a", "c", "t", " ", "M", "e"]}
               stringClass={stringClass}
@@ -66,7 +66,7 @@ const Contact = () => {
             <form
               ref={formRef}
               onSubmit={sendEmail}
-              className="grid gap-4 min-w-96 w-full"
+              className="grid gap-4 w-full"
             >
               <label htmlFor="name">
                 Name

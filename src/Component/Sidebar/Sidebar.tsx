@@ -1,29 +1,33 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import {
   faEnvelope,
   faHome,
-  faList,
+  faNavicon,
   faProjectDiagram,
+  faTools,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faInstagram,
   faLinkedinIn,
-  faRProject,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+
+import Menu from "./Menu";
 
 type isActive = {
   isActive: boolean;
 };
 
 const Sidebar = () => {
+  const [menu, setMenu] = useState(false);
   return (
     <>
-      <div className="min-h-screen hidden sm:flex w-20 px-8 py-4 absolute top-0 bg-neutral-950 items-center gap-28 flex-col  ">
+      <div className="min-h-screen hidden sm:flex w-20 px-8 py-4  absolute top-0 bg-neutral-950 items-center gap-16 flex-col  ">
         <Link to={"/"}>
           <img className="size-8 mx-auto" src={Logo} alt="logo" width={30} />
           <p className="text-white text-sm">Kingsley</p>
@@ -36,6 +40,14 @@ const Sidebar = () => {
             to="/"
           >
             <FontAwesomeIcon className="size-6" icon={faHome} />
+          </NavLink>
+          <NavLink
+            className={`skills-link ${({ isActive }: isActive) => {
+              isActive && "text-primary";
+            }}`}
+            to="skills"
+          >
+            <FontAwesomeIcon className="size-6" icon={faTools} />
           </NavLink>
           <NavLink
             className={`about-link ${({ isActive }: isActive) => {
@@ -62,27 +74,48 @@ const Sidebar = () => {
             <FontAwesomeIcon className="size-6" icon={faProjectDiagram} />
           </NavLink>
         </nav>
-        <ul className="list-none flex flex-col gap-6 ">
-          <Link to="">
-            <li>
+
+        {/* Social Links */}
+        <ul className="list-none flex flex-1 flex-col  gap-6 ">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kingsley-obiora-27a01a205"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedinIn} />
-            </li>
-          </Link>
-          <Link to="">
-            <li>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/ObioraKingsley/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} />
-            </li>
-          </Link>
-          <Link to="">
-            <li>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://x.com/kc_devv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faTwitter} />
-            </li>
-          </Link>
-          <Link to="">
-            <li>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://x.com/kc_devv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faInstagram} />
-            </li>
-          </Link>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -102,6 +135,14 @@ const Sidebar = () => {
             <FontAwesomeIcon className="size-6" icon={faHome} />
           </NavLink>
           <NavLink
+            className={`skills-link ${({ isActive }: isActive) => {
+              isActive && "text-primary";
+            }}`}
+            to="skills"
+          >
+            <FontAwesomeIcon className="size-6" icon={faTools} />
+          </NavLink>
+          <NavLink
             className={`about-link ${({ isActive }: isActive) => {
               isActive && "text-primary";
             }}`}
@@ -126,9 +167,15 @@ const Sidebar = () => {
             <FontAwesomeIcon className="size-6" icon={faProjectDiagram} />
           </NavLink>
         </nav>
-        <button className="text-primary">
-          l<FontAwesomeIcon icon={faList} />
-        </button>
+        <div
+          className="text-primary cursor-pointer text-2xl"
+          onClick={() => {
+            setMenu((prev) => !prev);
+          }}
+        >
+          <FontAwesomeIcon icon={faNavicon} />
+        </div>
+        {menu && <Menu />}
       </div>
     </>
   );

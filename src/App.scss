@@ -65,6 +65,13 @@ nav {
         left: -3px;
       }
     }
+    &.skills-link {
+      &::after {
+        content: "SKILLS";
+        position: absolute;
+        left: -4px;
+      }
+    }
     &.about-link {
       &::after {
         content: "ABOUT";
@@ -119,7 +126,8 @@ ul {
 
 .about-page,
 .contact-page,
-.project-page {
+.project-page,
+.skills-page {
   h1 {
     font-family: Coolvetica;
     font-weight: 400;

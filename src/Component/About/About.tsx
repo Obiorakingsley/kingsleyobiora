@@ -25,7 +25,7 @@ const About = () => {
     <>
       <div className="about-page container pl-10 sm:pt-12 pt-8 flex flex-col lg:flex-row items-center justify-around gap-10 mb-20">
         <div className="text-zone lg:w-2/3">
-          <h1 className="mb-16">
+          <h1 className="mb-10">
             <Animate
               strArray={["A", "b", "o", "u", "t", " ", "M", "e"]}
               idx={18}

@@ -5,8 +5,7 @@ import Animate from "../AnimatedLetters/Animate";
 import Modal from "./Modal";
 import TechBadge from "../../utils/TechBadge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faExpand, faLink } from "@fortawesome/free-solid-svg-icons";
-import { faOpenid } from "@fortawesome/free-brands-svg-icons";
+import { faCode, faLink } from "@fortawesome/free-solid-svg-icons";
 
 type ProjectType = {
   title: string;
@@ -161,9 +160,9 @@ const Projects = () => {
 
   return (
     <>
-      <section className="container pl-10 p-2 project-page  px-4 py-16">
+      <section className="container pl-10  p-2 project-page  px-4 pb-12 pt-4 sm:py-14">
         <div>
-          <h1 className="mb-16">
+          <h1 className="mb-12">
             <Animate
               strArray={["P", "r", "o", "j", "e", "c", "t", "s"]}
               stringClass={stringClass}

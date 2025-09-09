@@ -11,6 +11,7 @@ import Homepage from "./Pages/Homepage";
 import AboutPage from "./Component/About/About";
 import ContactPage from "./Pages/ContactPage";
 import Projects from "./Component/Projects/Project";
+import SkillPage from "./Pages/SkillPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<AboutPage />} />
       <Route path="contact" element={<ContactPage />} />
       <Route path="project" element={<Projects />} />
+      <Route path="skills" element={<SkillPage />} />
     </Route>
   )
 );
