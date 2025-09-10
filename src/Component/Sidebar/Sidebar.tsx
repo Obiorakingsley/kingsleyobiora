@@ -27,7 +27,7 @@ const Sidebar = () => {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <div className="min-h-screen hidden sm:flex w-20 px-8 py-4  absolute top-0 bg-neutral-950 items-center gap-16 flex-col  ">
+      <section className="sidebar min-h-screen hidden sm:flex w-20 px-8 py-4  absolute top-0 bg-neutral-950 items-center gap-16 flex-col  ">
         <Link to={"/"}>
           <img className="size-8 mx-auto" src={Logo} alt="logo" width={30} />
           <p className="text-white text-sm">Kingsley</p>
@@ -69,7 +69,7 @@ const Sidebar = () => {
             className={`project-link ${({ isActive }: isActive) => {
               isActive && "text-primary";
             }}`}
-            to="project"
+            to="projects"
           >
             <FontAwesomeIcon className="size-6" icon={faProjectDiagram} />
           </NavLink>
@@ -117,10 +117,10 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </section>
 
       {/* Mobile-menu */}
-      <div className="sm:hidden flex gap-3 items-center justify-between p-2 w-full bg-neutral-950 ">
+      <section className="mobile-nav sm:hidden flex gap-3 items-center justify-between p-2 w-full bg-neutral-950 ">
         <Link to={"/"}>
           <img className="size-8" src={Logo} alt="logo" width={30} />
           <p className="text-white text-sm">Kingsley</p>
@@ -162,21 +162,26 @@ const Sidebar = () => {
             className={`project-link ${({ isActive }: isActive) => {
               isActive && "text-primary";
             }}`}
-            to="project"
+            to="projects"
           >
             <FontAwesomeIcon className="size-6" icon={faProjectDiagram} />
           </NavLink>
         </nav>
-        <div
-          className="text-primary cursor-pointer text-2xl"
+
+        <button
+          className={`cursor-pointer text-2xl hover:text-primary  ${
+            menu && "text-primary "
+          }`}
+          type="button"
           onClick={() => {
             setMenu((prev) => !prev);
           }}
         >
+          <span className="off-screen">Menu-icon</span>
           <FontAwesomeIcon icon={faNavicon} />
-        </div>
+        </button>
         {menu && <Menu />}
-      </div>
+      </section>
     </>
   );
 };

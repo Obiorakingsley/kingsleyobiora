@@ -205,7 +205,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:underline shadow-md"
                       >
-                        <FontAwesomeIcon icon={faLink} /> Live Demo
+                        <FontAwesomeIcon icon={faLink} /> View
                       </a>
                     )}
                     {project.codeLink && (

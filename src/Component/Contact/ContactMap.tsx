@@ -23,7 +23,7 @@ const ContactMap = () => {
         <p>Nigeria</p>
         <p>
           <a
-            href={'mailto:"kingsleyobiora527@gmail.com'}
+            href="mailto:kingsleyobiora527@gmail.com"
             target="_blank"
             aria-label="Email: kingsleyobiora527@gmail.com"
             className="text-primary underline"

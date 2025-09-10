@@ -42,7 +42,9 @@ const Skills = () => {
         <div className="grid gap-3 mb-10">
           <h2 className="text-center text-2xl sm:text-3xl text-white mb-4">
             Bellow is a collection of technologies
-            <br /> and tools i use to bring ideas to life.
+            <br /> and tools{" "}
+            <span className="text-slate-300">i use to bring</span> ideas to
+            life.
           </h2>
           <p className="text-center text-primary">
             This blend of technical and soft skills
@@ -54,8 +56,8 @@ const Skills = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="cta-btn bg-white text-black py-2 px-3 text-xl shadow-xl mt-4 max-w-max place-self-center hover:scale-105 transition-transform hover:bg-slate-100">
-              <span className="cta-text bg-white rounded-full text-black text-xl shadow-2xl">
+            <button className="cta-btn bg-slate-100 text-black py-2 px-3 text-xl shadow-xl mt-4 max-w-max place-self-center hover:scale-105 transition-transform hover:bg-slate-100">
+              <span className="cta-text bg-slate-50 rounded-full text-black text-xl shadow-2xl">
                 View Resume
               </span>
             </button>
@@ -70,7 +72,7 @@ const Skills = () => {
           <strong>I actively practice:</strong>
           <div className="flex gap-3 mt-4 flex-wrap">
             {softSkils.map((skill) => (
-              <span className="bg-white text-black px-3 py-1 text-xs font-medium rounded-full shadow-xl shadow-gray-800 hover:scale-105 transition-transform cursor-default">
+              <span className="bg-slate-50 text-black px-3 py-1 text-xs font-medium rounded-full shadow-xl shadow-gray-800 hover:scale-105 transition-transform cursor-default">
                 {skill}
               </span>
             ))}
@@ -81,8 +83,8 @@ const Skills = () => {
         <div>
           <span>TypeScript</span>
           <img
-            height={40}
-            width={40}
+            height={35}
+            width={35}
             src="/typescript.png"
             alt="typescript icon"
           />
@@ -112,7 +114,7 @@ const Skills = () => {
         </div>
         <div>
           <span>Tailwind</span>
-          <img height={40} width={40} src="/tailwind.png" alt="tailwind icon" />
+          <img height={35} width={35} src="/tailwind.png" alt="tailwind icon" />
         </div>
         <div>
           <span>CSS3</span>
@@ -125,11 +127,11 @@ const Skills = () => {
 
         <div>
           <span>Vite</span>
-          <img height={40} width={40} src="/vite.png" alt="vite icon" />
+          <img height={35} width={35} src="/vite.png" alt="vite icon" />
         </div>
         <div>
           <span>npm</span>
-          <img height={40} width={40} src="/npm.png" alt="npm icon" />
+          <img height={35} width={35} src="/npm.png" alt="npm icon" />
         </div>
       </div>
     </section>

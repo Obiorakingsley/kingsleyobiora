@@ -93,12 +93,14 @@ const Home = () => {
             >
               Contact Me
             </Link>
-            <Link
+            <a
               className="cta-btn text-yellow-400 hover:bg-yellow-400 hover:text-slate-700 px-3 py-1 border-2 border-yellow-400 whitespace-nowrap rounded-md transition-all"
-              to="Upwork"
+              href="https://www.upwork.com/freelancers/~014c284b03874c3e78?mp_source=share"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Work with me
-            </Link>
+              Hire Me
+            </a>
           </div>
         </div>
         <div className="hidden profile-img lg:flex items-center justify-around w-full">

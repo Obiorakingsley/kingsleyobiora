@@ -23,6 +23,11 @@ body {
   color: #ffd700;
 }
 
+.off-screen {
+  position: absolute;
+  left: -10000px;
+}
+
 /* @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;

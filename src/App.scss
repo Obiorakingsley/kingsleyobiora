@@ -203,3 +203,18 @@ ul {
     }
   }
 }
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  .about-page,
+  .contact-page,
+  .project-page,
+  .skills-page {
+    margin-top: 65px;
+  }
+}

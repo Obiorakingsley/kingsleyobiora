@@ -29,6 +29,8 @@
     padding: 0.3rem 0.8rem;
     border-radius: 5px;
     color: #ffd700;
+    opacity: 0;
+    animation: fadeInUp 2s 3s forwards;
   }
 }
 
