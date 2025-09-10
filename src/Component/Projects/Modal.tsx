@@ -52,9 +52,9 @@ const Modal: React.FC<modalProps> = ({
                 //autoplay={{ delay: 3000 }}
                 pagination={{ clickable: true }}
               >
-                {images?.map((img) => (
+                {images?.map((img, idx) => (
                   <SwiperSlide>
-                    <img src={img} alt="project image" />
+                    <img key={idx} src={img} alt="project image" />
                   </SwiperSlide>
                 ))}
               </Swiper>
@@ -69,24 +69,24 @@ const Modal: React.FC<modalProps> = ({
         <div>
           <h2>Features</h2>
           <ul className="grid gap-4 list-disc list-inside  bg-color rounded-md p-2  py-4 text-primary text-sm">
-            {features?.map((feat) => (
-              <li>{feat}</li>
+            {features?.map((feat, idx) => (
+              <li key={idx}>{feat}</li>
             ))}
           </ul>
         </div>
         <div>
           <h2>Challenges</h2>
           <ul className="grid gap-4 list-disc list-inside  bg-color rounded-md p-2  py-4 text-primary text-sm">
-            {challenges?.map((chal) => (
-              <li>{chal}</li>
+            {challenges?.map((chal, idx) => (
+              <li key={idx}>{chal}</li>
             ))}
           </ul>
         </div>
         <div>
           <h2>Learnings</h2>
           <ul className="grid gap-4 list-disc list-inside  bg-color rounded-md p-2  py-4 text-primary text-sm">
-            {learnings?.map((learn) => (
-              <li>{learn}</li>
+            {learnings?.map((learn, idx) => (
+              <li key={idx}>{learn}</li>
             ))}
           </ul>
         </div>

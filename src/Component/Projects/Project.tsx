@@ -172,57 +172,53 @@ const Projects = () => {
         </div>
         <div className="card-container gap-8 w-full grid grid-cols-1 md:grid-cols-2 lg:pl-8 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <>
-              <div
-                className={`project-card cursor-pointer animate-card _${index} flex flex-col gap-2 bg-white shadow-lg  hover:shadow-2xl mx-auto transition-transform`}
-                onClick={() => {
-                  setModalData(project);
-                  setIsModal((prev) => !prev);
-                }}
-                key={index}
-              >
-                <img
-                  src={`/${project.images[0]}`}
-                  alt={project.title}
-                  className="h-48 w-full object-cover"
-                />
+            <div
+              className={`project-card cursor-pointer animate-card _${index} flex flex-col gap-2 bg-white shadow-lg  hover:shadow-2xl mx-auto transition-transform`}
+              onClick={() => {
+                setModalData(project);
+                setIsModal((prev) => !prev);
+              }}
+              key={index}
+            >
+              <img
+                src={`/${project.images[0]}`}
+                alt={project.title}
+                className="h-48 w-full object-cover"
+              />
 
-                <div className="p-5">
-                  <h2 className="text-xl font-semibold mb-2">
-                    {project.title}
-                  </h2>
-                  <p className="text-gray-600 mb-4">
-                    {project.description.substring(0, 55) + "..."}
-                  </p>
+              <div className="p-5">
+                <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
+                <p className="text-gray-600 mb-4">
+                  {project.description.substring(0, 55) + "..."}
+                </p>
 
-                  <TechBadge name={project.tech} />
+                <TechBadge name={project.tech} />
 
-                  <div className="flex gap-4 z">
-                    {project.projectLink && (
-                      <a
-                        href={project.projectLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline shadow-md"
-                      >
-                        <FontAwesomeIcon icon={faLink} /> View
-                      </a>
-                    )}
-                    {project.codeLink && (
-                      <a
-                        href={project.codeLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-800 hover:underline shadow-lg"
-                      >
-                        <FontAwesomeIcon icon={faCode} />
-                        Code
-                      </a>
-                    )}
-                  </div>
+                <div className="flex gap-4 z">
+                  {project.projectLink && (
+                    <a
+                      href={project.projectLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline shadow-md"
+                    >
+                      <FontAwesomeIcon icon={faLink} /> View
+                    </a>
+                  )}
+                  {project.codeLink && (
+                    <a
+                      href={project.codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-800 hover:underline shadow-lg"
+                    >
+                      <FontAwesomeIcon icon={faCode} />
+                      Code
+                    </a>
+                  )}
                 </div>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </section>

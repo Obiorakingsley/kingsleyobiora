@@ -10,8 +10,19 @@
       padding: 0.2rem 0.5rem;
     }
   }
+  .text-zone {
+    opacity: 0;
+    animation: fadeInRight 1.8s 0.8s forwards;
+  }
+
+  .soft-skill {
+    opacity: 0;
+    animation: fadeInUp 2s 1s forwards;
+  }
 
   .skills-icons {
+    opacity: 0;
+    animation: fadeInRight 2s 1.2s forwards;
     margin-top: 50px;
     div {
       padding: 0.5rem;
@@ -35,6 +46,11 @@
         font-size: 1.1rem;
         color: #ffffffd3;
         text-shadow: 2px 2px 8px #ffffff6c;
+      }
+
+      .next-text {
+        color: #444;
+        text-shadow: none;
       }
     }
   }

@@ -42,7 +42,7 @@ const Logo = () => {
 
   return (
     <div
-      className="logo-container absolute transition-all duration-500 top-20 right-2 sm:left-1/3 sm:mt-16 md:top-5 flex items-center justify-center"
+      className="logo-container absolute transition-all duration-500 top-20 right-2 sm:left-1/3 sm:mt-16 md:top-5 max flex items-center justify-center"
       ref={bgRef}
     >
       <svg

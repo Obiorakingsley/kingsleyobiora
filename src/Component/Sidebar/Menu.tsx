@@ -6,11 +6,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./Menu.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 const Menu = () => {
   return (
-    <div className="menu-container absolute bg-black right-0 top-16 p-8 min-w-72">
-      <span></span>
+    <div className="menu-container absolute bg-black grid gap-10 right-0 top-16 p-8 min-w-72">
+      <button className="text-xl text-primary" type="button">
+        View Resume
+      </button>
       <ul className="list-none flex flex-1 justify-between text-primary ">
         <li>
           <a
@@ -52,28 +53,6 @@ const Menu = () => {
           </a>
         </li>
       </ul>
-      {/* <ul className="grid w-full items-center gap-8 text-center text-2xl">
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            View Resume
-          </a>
-        </li>
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            View Resume
-          </a>
-        </li>
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            View Resume
-          </a>
-        </li>
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            View Resume
-          </a>
-        </li>
-      </ul> */}
     </div>
   );
 };

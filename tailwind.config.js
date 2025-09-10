@@ -10,7 +10,7 @@ export default {
         Aurore: "La Belle Aurore",
       },
       colors: {
-        primary: "#ffd700",
+        primary: "#ffd900d9",
         color: "#06162e",
       },
     },

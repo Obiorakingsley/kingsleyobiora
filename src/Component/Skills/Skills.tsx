@@ -10,6 +10,7 @@ import {
   faHtml5,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import { faFire } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
   const [stringClass, setStringClass] = useState("string-animate");
@@ -30,8 +31,8 @@ const Skills = () => {
   ];
 
   return (
-    <section className="skills-page container pl-10 p-2  px-4 pb-12 pt-4 sm:pt-12 lg:flex  gap-8">
-      <div className="text-container">
+    <section className="skills-page container pl-8 p-2  px-4 pb-12 pt-4 sm:pt-12 lg:flex  gap-8">
+      <div className="text-container pl-1">
         <h1 className="mb-8">
           <Animate
             strArray={["M", "y", " ", "T", "o", "o", "l", "k", "i", "t"]}
@@ -39,7 +40,7 @@ const Skills = () => {
             stringClass={stringClass}
           />
         </h1>
-        <div className="grid gap-3 mb-10">
+        <div className="text-zone grid gap-3 mb-10">
           <h2 className="text-center text-2xl sm:text-3xl text-white mb-4">
             Bellow is a collection of technologies
             <br /> and tools{" "}
@@ -63,7 +64,7 @@ const Skills = () => {
             </button>
           </a>
         </div>
-        <div className="text-white bg-black p-4 rounded-md">
+        <div className="soft-skill text-white bg-black p-4 rounded-md">
           <h2 className="text-primary text-xl mb-4"> Beyond Code</h2>
           <p>
             I thrive in collaborative environments and understand that building
@@ -71,8 +72,11 @@ const Skills = () => {
           </p>{" "}
           <strong>I actively practice:</strong>
           <div className="flex gap-3 mt-4 flex-wrap">
-            {softSkils.map((skill) => (
-              <span className="bg-slate-50 text-black px-3 py-1 text-xs font-medium rounded-full shadow-xl shadow-gray-800 hover:scale-105 transition-transform cursor-default">
+            {softSkils.map((skill, idx) => (
+              <span
+                key={idx}
+                className="bg-slate-50 text-black px-3 py-1 text-xs font-medium rounded-full shadow-xl shadow-gray-800 hover:scale-105 transition-transform cursor-default"
+              >
                 {skill}
               </span>
             ))}
@@ -104,9 +108,12 @@ const Skills = () => {
           <span>React</span>
           <FontAwesomeIcon icon={faReact} color="#5ed4f4" />
         </div>
-        <div>
+        <div className="relative">
           <span>Next.js</span>
           <img height={40} width={40} src="/nextjs.png" alt="nextjs icon" />
+          <span className="next-text text-xs font-Aurore absolute bottom-2 text-color">
+            Learning
+          </span>
         </div>
         <div>
           <span>Sass</span>
@@ -123,6 +130,10 @@ const Skills = () => {
         <div>
           <span>Git</span>
           <FontAwesomeIcon icon={faGitAlt} color="#ec4d28" />
+        </div>
+        <div>
+          <span>Firebase</span>
+          <FontAwesomeIcon icon={faFire} color="#ec4d28" />
         </div>
 
         <div>

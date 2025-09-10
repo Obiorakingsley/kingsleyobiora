@@ -27,7 +27,7 @@ const Sidebar = () => {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <section className="sidebar min-h-screen hidden sm:flex w-20 px-8 py-4  absolute top-0 bg-neutral-950 items-center gap-16 flex-col  ">
+      <section className="sidebar min-h-screen hidden sm:flex w-20 px-8 py-4  absolute top-0 bg-black items-center gap-16 flex-col  ">
         <Link to={"/"}>
           <img className="size-8 mx-auto" src={Logo} alt="logo" width={30} />
           <p className="text-white text-sm">Kingsley</p>
@@ -120,7 +120,7 @@ const Sidebar = () => {
       </section>
 
       {/* Mobile-menu */}
-      <section className="mobile-nav sm:hidden flex gap-3 items-center justify-between p-2 w-full bg-neutral-950 ">
+      <section className="mobile-nav sm:hidden flex gap-3 items-center justify-between p-2 w-full bg-black ">
         <Link to={"/"}>
           <img className="size-8" src={Logo} alt="logo" width={30} />
           <p className="text-white text-sm">Kingsley</p>
