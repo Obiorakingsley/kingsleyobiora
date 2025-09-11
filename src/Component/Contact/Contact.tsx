@@ -93,7 +93,7 @@ const Contact = () => {
         </div>
         <ContactMap />
       </div>
-      <Loader type="pacman" />
+      <Loader active={true} type="pacman" />
     </>
   );
 };

@@ -243,7 +243,7 @@ const Projects = () => {
           challenges={modalData?.challenges}
         />
       )}
-      <Loader type="pacman" />
+      <Loader active={true} type="pacman" />
     </>
   );
 };

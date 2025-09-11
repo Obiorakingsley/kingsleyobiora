@@ -114,7 +114,7 @@ const Home = () => {
         </div>
         <Logo />
       </div>
-      <Loader type="pacman" />
+      <Loader active={true} type="pacman" />
     </>
   );
 };

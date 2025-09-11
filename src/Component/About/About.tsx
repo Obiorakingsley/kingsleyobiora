@@ -128,7 +128,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader active={true} type="pacman" />
     </>
   );
 };
