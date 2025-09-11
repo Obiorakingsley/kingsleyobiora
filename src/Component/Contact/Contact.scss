@@ -32,6 +32,10 @@
     opacity: 0;
     animation: fadeInUp 2s 3s forwards;
   }
+  .captcha {
+    opacity: 0;
+    animation: fadeInUp 2s 2.5s forwards;
+  }
 }
 
 .map-container {

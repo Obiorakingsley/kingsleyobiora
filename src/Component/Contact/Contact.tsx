@@ -81,6 +81,7 @@ const Contact = () => {
                 <textarea name="message" id="message" required></textarea>
               </label>
               <ReCAPTCHA
+                className="captcha"
                 sitekey="6LchXcArAAAAANBxNmvVIZIxlIwjgc_DCJA8XMbU"
                 onChange={(token: string | null) => setCaptchaToken(token)}
               />

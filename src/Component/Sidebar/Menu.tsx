@@ -9,9 +9,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Menu = () => {
   return (
     <div className="menu-container absolute bg-black grid gap-10 right-0 top-16 p-8 min-w-72">
-      <button className="text-xl text-primary" type="button">
+      <a
+        className="text-xl text-center text-primary"
+        type="button"
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         View Resume
-      </button>
+      </a>
       <ul className="list-none flex flex-1 justify-between text-primary ">
         <li>
           <a

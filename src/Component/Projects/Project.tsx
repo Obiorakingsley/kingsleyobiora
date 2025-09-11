@@ -25,7 +25,13 @@ const projects: ProjectType[] = [
     description:
       "Personal portfolio showcasing animations, contact form, and responsive design.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Sass", "EmailJS"],
-    images: ["e-store.png", "img"],
+    images: [
+      "Portfolio/img1.png",
+      "Portfolio/img2.png",
+      "Portfolio/img3.png",
+      "Portfolio/img4.png",
+      "Portfolio/img5.png",
+    ],
     projectLink: "https://kingsleyObiora.com",
     codeLink: "https://github.com/ObioraKingsley/portfolio",
     challenges: [

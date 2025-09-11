@@ -44,7 +44,11 @@
   }
 }
 
-.profile-img {
+.profile-img-container {
   opacity: 0;
-  animation: fadeIn 1s 1.5s forwards;
+  animation: fadeIn 1s 1.2s forwards;
+
+  .profile-img {
+    border: 20px solid #13233a;
+  }
 }

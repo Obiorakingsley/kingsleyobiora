@@ -103,9 +103,9 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="hidden profile-img lg:flex items-center justify-around w-full">
+        <div className="hidden profile-img-container lg:flex items-center justify-around w-full">
           <img
-            className="rounded-full border-8 border-amber-400 hover:animate-pulse"
+            className="rounded-full border-8 profile-img"
             src={Profilepic}
             alt="profile pic"
             width={350}
