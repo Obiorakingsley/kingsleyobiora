@@ -1,69 +1,54 @@
-# React + TypeScript + Vite
+# 🌐 Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Vercel Status](https://img.shields.io/badge/deployed%20on-vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://kingsleyobiora.vercel.app)
 
-Currently, two official plugins are available:
+A personal portfolio website built to showcase my projects, skills, and experiences.  
+This project focuses on **modern web development practices** with smooth animations, responsive design, and clean UI components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** – UI library for building interactive user interfaces.  
+- **TypeScript** – Type safety and better developer experience.  
+- **GSAP** – Advanced animations and smooth transitions.  
+- **Tailwind CSS** – Utility-first CSS framework for rapid UI development.  
+- **Sass (SCSS)** – For styling flexibility and custom reusable styles.  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🎨 Modern, responsive, and mobile-friendly design.  
+- 🔥 Smooth GSAP animations for engaging interactions.  
+- ⚡ Built with TypeScript for maintainability and scalability.  
+- 🎭 Combination of **Tailwind** utilities and **Sass** custom styles.  
+- 🖼️ Projects showcase with descriptions, live demos, and code links.  
+- 📬 Contact section with call-to-action buttons.  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Clone the repository
+git clone https://github.com/Obiorakingsley/kingsleyobiora.git
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Navigate to the project folder
+cd portfolio
+
+# Install dependencies
+npm install
+
+npm run dev
+
+---
+
+📬 Contact
+
+# If you’d like to collaborate or discuss opportunities, feel free to reach out!
+
+Email: kingsleyobiora527@gmail.com
+
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingsley-obiora-27a01a205)
+
+Portfolio [Live Site](https://kingsleyobiora.vercel.app)
+
+
