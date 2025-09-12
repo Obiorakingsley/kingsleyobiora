@@ -16,7 +16,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
 
 const ContactMap = () => {
   return (
-    <div className="w-full p-4">
+    <div className="w-full p-2">
       <div className="info-map  h-32 w-full p-2 flex flex-col justify-around">
         <p>KIngsley Obiora</p>
         <p>Lagos</p>
