@@ -7,6 +7,7 @@ import {
   faGitAlt,
   faHtml5,
   faJsSquare,
+  faLinkedinIn,
   faReact,
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
@@ -23,7 +24,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <div className="about-page container pl-10 sm:pt-12 pt-8 flex flex-col lg:flex-row items-center justify-around gap-10 mb-20">
+      <div className="about-page container pl-10 sm:pt-12 pt-8 p-4 flex flex-col lg:flex-row items-center justify-around gap-10 mb-20">
         <div className="text-zone lg:w-2/3">
           <h1 className="mb-10">
             <Animate
@@ -93,10 +94,37 @@ const About = () => {
             <h2>Let’s Connect</h2>
             <p>
               I’d love to collaborate or chat about exciting opportunities. 👉
-              [LinkedIn] | [GitHub] | [Email]
+              <a
+                className="text-primary mr-2"
+                href="https://www.linkedin.com/in/kingsley-obiora-27a01a205"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Linkedin
+              </a>
+              |
+              <a
+                className="text-primary m-2"
+                href="https://github.com/ObioraKingsley/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+              |
+              <a
+                className="text-primary m-2"
+                href="mailto:kingsleyobiora527@gmail.com"
+                target="_blank"
+                aria-label="Email:kingsleyobiora527@gmail.com"
+                rel="noopener noreferrer"
+              >
+                Email
+              </a>
             </p>
           </div>
         </div>
+
         <div className="stage-cube grid items-center relative">
           <div className="cubespinner absolute top-32 ">
             <div className="face1">

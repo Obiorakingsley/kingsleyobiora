@@ -204,10 +204,9 @@ ul {
   }
 }
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 5;
-  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 640px) {

@@ -15,8 +15,6 @@
 body {
   color: #444;
   background-color: #06162e;
-  overflow: hidden;
-  display: block;
 }
 
 .active {

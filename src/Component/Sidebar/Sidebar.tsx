@@ -27,7 +27,7 @@ const Sidebar = () => {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <section className="sidebar min-h-screen hidden sm:flex w-20 px-8 py-4  absolute top-0 bg-black items-center gap-16 flex-col  ">
+      <section className="sidebar min-h-screen hidden sm:flex w-20 px-8 py-4 fixed left-0 top-0 bottom-0 bg-black items-center gap-16 flex-col  ">
         <Link to={"/"}>
           <img className="size-8 mx-auto" src={Logo} alt="logo" width={30} />
           <p className="text-white text-sm">Kingsley</p>
@@ -120,19 +120,19 @@ const Sidebar = () => {
       </section>
 
       {/* Mobile-menu */}
-      <section className="mobile-nav sm:hidden flex gap-3 items-center justify-between p-2 w-full bg-black ">
+      <section className="mobile-nav sm:hidden flex gap-3 items-center justify-between p-4 w-full bg-black ">
         <Link to={"/"}>
-          <img className="size-8" src={Logo} alt="logo" width={30} />
+          <img className="size-7" src={Logo} alt="logo" width={25} />
           <p className="text-white text-sm">Kingsley</p>
         </Link>
-        <nav className="flex-1 flex gap-2 justify-around ">
+        <nav className="flex-1 flex gap-2 justify-between items-center p-1 ">
           <NavLink
             className={`home ${({ isActive }: isActive) => {
               isActive && "text-primary";
             }}`}
             to="/"
           >
-            <FontAwesomeIcon className="size-6" icon={faHome} />
+            <FontAwesomeIcon className="size-5" icon={faHome} />
           </NavLink>
           <NavLink
             className={`skills-link ${({ isActive }: isActive) => {
@@ -140,7 +140,7 @@ const Sidebar = () => {
             }}`}
             to="skills"
           >
-            <FontAwesomeIcon className="size-6" icon={faTools} />
+            <FontAwesomeIcon className="size-5" icon={faTools} />
           </NavLink>
           <NavLink
             className={`about-link ${({ isActive }: isActive) => {
@@ -148,7 +148,7 @@ const Sidebar = () => {
             }}`}
             to="about"
           >
-            <FontAwesomeIcon className="size-6" icon={faUser} />
+            <FontAwesomeIcon className="size-5" icon={faUser} />
           </NavLink>
           <NavLink
             className={`contact-link ${({ isActive }: isActive) => {
@@ -156,7 +156,7 @@ const Sidebar = () => {
             }}`}
             to="contact"
           >
-            <FontAwesomeIcon className="size-6" icon={faEnvelope} />
+            <FontAwesomeIcon className="size-5" icon={faEnvelope} />
           </NavLink>
           <NavLink
             className={`project-link ${({ isActive }: isActive) => {
@@ -164,22 +164,22 @@ const Sidebar = () => {
             }}`}
             to="projects"
           >
-            <FontAwesomeIcon className="size-6" icon={faProjectDiagram} />
+            <FontAwesomeIcon className="size-5" icon={faProjectDiagram} />
           </NavLink>
-        </nav>
 
-        <button
-          className={`cursor-pointer text-2xl hover:text-primary  ${
-            menu && "text-primary "
-          }`}
-          type="button"
-          onClick={() => {
-            setMenu((prev) => !prev);
-          }}
-        >
-          <span className="off-screen">Menu-icon</span>
-          <FontAwesomeIcon icon={faNavicon} />
-        </button>
+          <button
+            className={`cursor-pointer hover:text-primary  ${
+              menu && "text-primary "
+            }`}
+            type="button"
+            onClick={() => {
+              setMenu((prev) => !prev);
+            }}
+          >
+            <span className="off-screen">Menu-icon</span>
+            <FontAwesomeIcon className="size-6" icon={faNavicon} />
+          </button>
+        </nav>
         {menu && <Menu />}
       </section>
     </>

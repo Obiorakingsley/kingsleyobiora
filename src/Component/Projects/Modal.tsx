@@ -35,9 +35,9 @@ const Modal: React.FC<modalProps> = ({
   challenges,
 }) => {
   return (
-    <section className="modal-container absolute bg-black inset-1 z-5 top-0 backdrop-blur-sm bg-opacity-30 text-white h-full grid place-content-center place-items-center">
-      <div className="text-black modal-details border-2 flex flex-col p-3 gap-3 max-w-screen-sm lg:max-w-screen-sm h-5/6  rounded-xl overflow-y-scroll relative transition-transform">
-        <div className="min-h-max">
+    <section className="modal-container fixed bg-black inset-1 z-5 backdrop-blur-sm bg-opacity-30 text-white h-full grid place-content-center place-items-center p-6">
+      <div className="text-black modal-details border-2 flex flex-col p-3 gap-3 max-w-screen-sm lg:max-w-screen-sm   rounded-xl overflow-y-scroll relative transition-transform">
+        <div className="relative">
           {
             <>
               <Swiper
@@ -115,7 +115,7 @@ const Modal: React.FC<modalProps> = ({
           )}
         </div>
         <div
-          className="cursor-pointer z-10 right-2 top-2 md:top-8 fixed p-2 text-3xl text-white shadow-xl"
+          className="cursor-pointer z-10 right-2 top-14 fixed  md:top-8 p-2 text-3xl text-white shadow-xl"
           onClick={() => {
             setIsModal(false);
           }}

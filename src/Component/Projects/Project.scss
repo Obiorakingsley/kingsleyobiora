@@ -27,6 +27,8 @@
 .modal-details {
   margin: 0 auto;
   background-color: #ffffff;
+  top: 5%;
+  max-height: 70vh;
 
   &::-webkit-scrollbar {
     width: 4px;
