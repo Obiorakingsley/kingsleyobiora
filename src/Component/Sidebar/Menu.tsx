@@ -12,7 +12,7 @@ const Menu = () => {
       <a
         className="text-xl text-center text-primary"
         type="button"
-        href="/resume.pdf"
+        href="/Kingsley_Obiora_CV.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >
