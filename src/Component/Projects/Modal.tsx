@@ -115,7 +115,7 @@ const Modal: React.FC<modalProps> = ({
           )}
         </div>
         <div
-          className="cursor-pointer z-10 right-2 top-14 fixed  md:top-8 p-2 text-3xl text-white shadow-xl"
+          className="cursor-pointer z-10 right-2 top-16 fixed  md:top-8 p-2 text-3xl text-white shadow-xl"
           onClick={() => {
             setIsModal(false);
           }}

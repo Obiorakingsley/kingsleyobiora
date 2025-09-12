@@ -63,14 +63,10 @@ const Contact = () => {
             </p>
           </div>
           <div className="contact-form mt-8 pb-8">
-            <form
-              ref={formRef}
-              onSubmit={sendEmail}
-              className="grid gap-4 w-full"
-            >
+            <form ref={formRef} onSubmit={sendEmail} className="grid gap-4 p-2">
               <label htmlFor="name">
                 Name
-                <input type="text" id="name" name="name" autoFocus required />
+                <input type="text" id="name" name="name" required />
               </label>
               <label htmlFor="email">
                 Email
@@ -82,7 +78,7 @@ const Contact = () => {
               </label>
               <ReCAPTCHA
                 className="captcha"
-                sitekey="6LchXcArAAAAANBxNmvVIZIxlIwjgc_DCJA8XMbU"
+                sitekey="6LfTH8crAAAAAEeTMexeCLYQmg7g2Rl37L28imy5"
                 onChange={(token: string | null) => setCaptchaToken(token)}
               />
               <button className="place-self-start shadow " type="submit">

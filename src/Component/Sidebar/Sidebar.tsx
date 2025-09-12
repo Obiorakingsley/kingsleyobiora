@@ -123,7 +123,7 @@ const Sidebar = () => {
       <section className="mobile-nav sm:hidden flex gap-3 items-center justify-between p-4 w-full bg-black ">
         <Link to={"/"}>
           <img className="size-7" src={Logo} alt="logo" width={25} />
-          <p className="text-white text-sm">Kingsley</p>
+          <p className="text-white text-xs">Kingsley</p>
         </Link>
         <nav className="flex-1 flex gap-2 justify-between items-center p-1 ">
           <NavLink
