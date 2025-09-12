@@ -45,16 +45,16 @@ const Contact = () => {
   }
   return (
     <>
-      <div className="contact-page w-full container sm:pt-12 pt-4 pl-12 p-4 flex flex-col lg:flex-row lg:gap-40 lg:justify-between mb-20">
+      <div className="contact-page w-full container sm:pt-12 pt-4 pl-8 p-4 flex flex-col lg:flex-row lg:gap-40 lg:justify-between mb-20">
         <div className=" mb-14">
-          <h1 className="mb-12">
+          <h1 className="mb-12 ml-6">
             <Animate
               strArray={["C", "o", "n", "t", "a", "c", "t", " ", "M", "e"]}
               stringClass={stringClass}
               idx={15}
             />
           </h1>
-          <div className="contact-text">
+          <div className="contact-text pl-6 pr-2">
             <h2>Get In Touch</h2>
             <p>
               I’d love to collaborate or chat about exciting opportunities. Feel
