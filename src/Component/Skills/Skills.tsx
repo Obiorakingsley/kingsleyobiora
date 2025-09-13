@@ -67,7 +67,7 @@ const Skills = () => {
               </button>
             </a>
           </div>
-          <div className="soft-skill text-white bg-black p-4 rounded-md">
+          <div className="soft-skill text-white bg-black p-4 rounded-md mr-4">
             <h2 className="text-primary text-xl mb-4"> Beyond Code</h2>
             <p>
               I thrive in collaborative environments and understand that
@@ -87,71 +87,72 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="skills-icons grid justify-center items-center grid-cols-3 m-auto gap-4 max-w-96 min-w-80">
+        <div className="skills-icons grid pr-4 justify-center items-center grid-cols-3 m-auto gap-4 max-w-96 min-w-80">
           <div>
-            <span>TypeScript</span>
             <img
               height={35}
               width={35}
               src="/typescript.png"
               alt="typescript icon"
             />
+            <span>TypeScript</span>
           </div>
 
           <div>
-            <span>JavaScript</span>
             <FontAwesomeIcon icon={faJsSquare} color="#efd81d" />
+            <span>JavaScript</span>
           </div>
 
           <div>
-            <span>HTML5</span>
             <FontAwesomeIcon icon={faHtml5} color="#f06520" />
+            <span>HTML5</span>
           </div>
 
           <div>
-            <span>React</span>
             <FontAwesomeIcon icon={faReact} color="#5ed4f4" />
+            <span>React</span>
           </div>
+
           <div className="relative">
-            <span>Next.js</span>
-            <img height={40} width={40} src="/nextjs.png" alt="nextjs icon" />
-            <span className="next-text text-xs font-Aurore absolute bottom-2 text-color">
+            <span className="next-text text-xs font-Aurore absolute top-2 text-color">
               Learning
             </span>
+            <img height={40} width={40} src="/nextjs.png" alt="nextjs icon" />
+            <span>Next.js</span>
           </div>
           <div>
-            <span>Sass</span>
             <FontAwesomeIcon icon={faSass} color="#ec4d28" />
+            <span>Sass</span>
           </div>
           <div>
-            <span>Tailwind</span>
             <img
               height={35}
               width={35}
               src="/tailwind.png"
               alt="tailwind icon"
             />
+            <span>Tailwind</span>
           </div>
           <div>
-            <span>CSS3</span>
             <FontAwesomeIcon icon={faCss3} color="#28a4d9" />
+            <span>CSS3</span>
           </div>
           <div>
-            <span>Git</span>
             <FontAwesomeIcon icon={faGitAlt} color="#ec4d28" />
+            <span>Git</span>
           </div>
           <div>
+            <img height={35} width={35} src="/firebase.png" alt="vite icon" />
             <span>Firebase</span>
-            <FontAwesomeIcon icon={faFire} color="#ec4d28" />
           </div>
 
           <div>
-            <span>Vite</span>
             <img height={35} width={35} src="/vite.png" alt="vite icon" />
+            <span>Vite</span>
           </div>
           <div>
-            <span>npm</span>
             <img height={35} width={35} src="/npm.png" alt="npm icon" />
+            <span>npm</span>
           </div>
         </div>
       </section>
