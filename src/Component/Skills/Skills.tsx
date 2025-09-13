@@ -10,7 +10,6 @@ import {
   faHtml5,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
-import { faFire } from "@fortawesome/free-solid-svg-icons";
 import Loader from "react-loaders";
 
 const Skills = () => {
