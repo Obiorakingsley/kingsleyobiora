@@ -5,6 +5,7 @@ import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 import ContactMap from "./ContactMap";
+import profilepic from "../../assets/images/profilepic.jpg";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -54,6 +55,15 @@ const Contact = () => {
               idx={15}
             />
           </h1>
+          <div className="profile-img-container flex items-center justify-around w-full">
+            <img
+              className="rounded-full border-8 profile-img"
+              src={profilepic}
+              alt="profile pic"
+              width={270}
+              height={270}
+            />
+          </div>
           <div className="contact-text pl-6 pr-2">
             <h2>Get In Touch</h2>
             <p>
