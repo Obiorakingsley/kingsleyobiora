@@ -47,8 +47,8 @@ nav {
 
     &:after {
       content: "";
-      font-size: 9px;
-      letter-spacing: 2px;
+      font-size: 0.4rem;
+      letter-spacing: 1.5px;
       position: absolute;
       bottom: 12px;
       left: 0;
@@ -62,35 +62,35 @@ nav {
       &::after {
         content: "HOME";
         position: absolute;
-        left: -3px;
+        left: -7px;
       }
     }
     &.skills-link {
       &::after {
         content: "SKILLS";
         position: absolute;
-        left: -4px;
+        left: -11px;
       }
     }
     &.about-link {
       &::after {
         content: "ABOUT";
         position: absolute;
-        left: -4px;
+        left: -11px;
       }
     }
     &.contact-link {
       &::after {
         content: "CONTACT";
         position: absolute;
-        left: -15px;
+        left: -18px;
       }
     }
     &.project-link {
       &::after {
         content: "PROJECTS";
         position: absolute;
-        left: -13px;
+        left: -18px;
       }
     }
   }
