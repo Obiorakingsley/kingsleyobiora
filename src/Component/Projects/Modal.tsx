@@ -49,7 +49,7 @@ const Modal: React.FC<modalProps> = ({
                 grabCursor={true}
                 //loop={true}
                 slidesPerView="auto"
-                //autoplay={{ delay: 3000 }}
+                autoplay={{ delay: 3000 }}
                 pagination={{ clickable: true }}
               >
                 {images?.map((img, idx) => (
