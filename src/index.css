@@ -15,6 +15,7 @@
 body {
   color: #444;
   background-color: #06162e;
+  min-height: 100dvh;
 }
 
 .active {
